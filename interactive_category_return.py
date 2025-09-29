@@ -251,6 +251,6 @@ def update_graphs(
         build_cumulative_figure(scoped_returns, f"{frequency_label} Cumulative Returns"),
     )
 
-
+server = app.server
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, address = 0.0.0.0, port=8050)
